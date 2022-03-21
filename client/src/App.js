@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Button_A from "./Components/buttons/button_A";
+
 
 function App() {
+
+  const amount1 = 20000;
+  const amount2 = 40000;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class='bg-slate-50'>
+      <Button_A
+        amount = {"$25,000"}    
+      />
+      <Button_A
+        amount = {amount2}
+      />
+      <Button_A
+        amount = {amount1}
+      />
+      
     </div>
   );
 }
